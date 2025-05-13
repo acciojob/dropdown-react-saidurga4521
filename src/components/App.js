@@ -280,30 +280,36 @@ function App() {
       <div>
         <h3>State Info</h3>
         <div id="state-title">
-          <strong>Name:</strong> {currentState.name}
+          <strong>Name:</strong>
+          {currentState.name}
         </div>
         <div id="state-description">
-          <strong>Description:</strong> {currentState.description}
+          <strong>Description:</strong>
+          {currentState.description}
         </div>
       </div>
 
       <div>
         <h3>City Info</h3>
         <div id="city-name">
-          <strong>Name:</strong> {currentCity.name}
+          <strong>Name:</strong>
+          {currentCity.name}
         </div>
         <div id="city-description">
-          <strong>Description:</strong> {currentCity.description}
+          <strong>Description:</strong>
+          {currentCity.description}
         </div>
       </div>
 
       <div>
         <h3>Landmark Info</h3>
         <div id="landmark-name">
-          <strong>Name:</strong> {currentLandmark.name}
+          <strong>Name:</strong>
+          {currentLandmark.name}
         </div>
         <div id="landmark-description">
-          <strong>Description:</strong> {currentLandmark.description}
+          <strong>Description:</strong>
+          {currentLandmark.description}
         </div>
       </div>
     </div>
