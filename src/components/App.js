@@ -285,13 +285,13 @@ function App() {
 
       <div>
         <h3>City Info</h3>
-        <div id="city-name">{currentCity.name}</div>
+        <div id="city-title">{currentCity.name}</div>
         <div id="city-description">{currentCity.description}</div>
       </div>
 
       <div>
         <h3>Landmark Info</h3>
-        <div id="landmark-name">{currentLandmark.name}</div>
+        <div id="landmark-title">{currentLandmark.name}</div>
         <div id="landmark-description">{currentLandmark.description}</div>
       </div>
     </div>
