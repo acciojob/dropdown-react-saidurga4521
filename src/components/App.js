@@ -226,8 +226,8 @@ function App() {
   const [landmarkIndex, setLandMarkIndex] = useState(0);
 
   let currentState = data[stateIndex];
-  let currentCity = currentState.city[cityIndex];
-  let currentLandmark = currentCity.landmarks[landmarkIndex];
+  let currentCity = currentState?.city[cityIndex];
+  let currentLandmark = currentCity?.landmarks[landmarkIndex];
 
   useEffect(() => {
     setCityIndex(0);
