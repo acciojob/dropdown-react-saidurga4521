@@ -279,7 +279,7 @@ function App() {
 
       <div>
         <h3>State Info</h3>
-        <div id="state-name">
+        <div id="state-title">
           <strong>Name:</strong> {currentState.name}
         </div>
         <div id="state-description">
