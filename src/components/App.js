@@ -241,38 +241,44 @@ function App() {
     <div id="main">
       <h1>Select location</h1>
       <div>
-        <label for="state">Select a State</label>
+        <h2>Select state</h2>
         <select
           id="state"
           value={stateIndex}
           onChange={(e) => setStateIndex(Number(e.target.value))}
         >
           {data.map((state, index) => (
-            <option value={index}>{state.name}</option>
+            <option key={index} value={index}>
+              {state?.name}
+            </option>
           ))}
         </select>
       </div>
       <div>
-        <label for="city">Select a City</label>
+        <h2>Select city</h2>
         <select
           id="city"
           value={cityIndex}
           onChange={(e) => setCityIndex(Number(e.target.value))}
         >
           {currentState.city.map((city, index) => (
-            <option value={index}>{city.name}</option>
+            <option key={index} value={index}>
+              {city?.name}
+            </option>
           ))}
         </select>
       </div>
       <div>
-        <label for="landmark">Select a City</label>
+        <h2>Select Landmark</h2>
         <select
           id="landmark"
           value={landmarkIndex}
           onChange={(e) => setLandMarkIndex(Number(e.target.value))}
         >
           {currentCity.landmarks.map((landmark, index) => (
-            <option value={index}>{landmark.name}</option>
+            <option key={index} value={index}>
+              {landmark?.name}
+            </option>
           ))}
         </select>
       </div>
